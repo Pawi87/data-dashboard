@@ -3,12 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
+  <nav>
+      <div class="logo"></div>
+
+  </nav>
+  <section class="general-container">
+      <div class="info-container">
+          <h1>SEDE</h1>
+          <div >
+              <select name="" id="sede">
+                  <option value="val1">CDMX</option>
+                  <option value="val2">AREQUIPA</option>
+                  <option value="val3">LIMA</option>
+                  <option value="val4">SANTIAGO</option>
+              </select>
+          </div>
+      </div>
+      <div class="info-container">
+          <h1>GENERACION</h1>
+          <div>
+              <select name="" id="generacion">
+                  <option value="valor1">2017</option>
+                  <option value="valor2">2016</option>
+              </select>
+          </div>
+      </div>
+      <div class="info-container">
+          <h1>TURNO</h1>
+          <div>
+              <select name="" id="turno">
+                  <option value="value1">AM</option>
+                  <option value="value2">PM</option>
+              </select>
+          </div>
+      </div>
+  </section>
+  <footer class="footer-container">
+      <div class="btn-container">
+          <button id="go" >GO!</button>
+      </div>
+  </footer>
 
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
     <script src="./js/app.js"></script>
+    
   </body>
 </html>
