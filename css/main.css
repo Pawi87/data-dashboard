@@ -1,58 +1,175 @@
 * {
-    box-sizing: border-box;
+	/*margin: 0;
+	padding: 0;*/
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
 }
 
 html {
-    font-family: 'Lato', sans-serif;
-    font-size: 10px;
 
 }
 
 nav {
     width: 100%;
-    background-color: gray;
 }
 
-.logo {
+.logo {/*estilo de logo cabecera*/
     background-image: url(../assets/images/logo-laboratoria.svg);
-    width: 30%;
-    height: 100px;
+    width: 250px;
+    height: 90px;
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
 }
 
-.general-container {
+.general-container {/*estilo de menu gen-sede*/
     display: flex;
-    padding: 2em;
-    justify-content: space-between
+    padding: 1em;
+    justify-content: space-around;
+		font-size: 10px;
 }
 
-.info-container {
-    width: 25%;
+.info-container {/*estilo de menu gen-sede*/
+    width: 20%;
     background-color: orange;
-    border-radius: 1em;
+    border-radius: 10px;
     text-align: center;
-    height: 200px;
+    height: 80px;
+
 }
 
-.footer-container {
-    height: 200px;
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.profile-container {/*estilo de menu gen-sede*/
+		width: 20%;
+    background-color: #DCDCDC;
+    border-radius: 10px;
+    height: 80px;
 }
 
-.btn-container{
-    width: 30%
+.profile-pic{
+		width: 60px;
+		border-radius: 50%;
+		margin-left: 5%;
+		margin-top: 4%;
 }
 
-#go{
+.profile-data{
+	text-align: left;
+	font-size: 17px;
+	display:inline-block;
+	margin-left: 5%;
+}
+
+
+#generacion{/*estilo de menu gen-sede*/
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+#go{/*estilo de menu gen-sede*/
     border: none;
-    width: 100%;
-    height: 100px;
+    width: 170%;
+    height: 25px;
     border-radius: 1em;
-    font-weight: 900;
-    font-size: 3em;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 1.5em;
+    margin-left: 120%;
+}
+
+#sede{/*estilo de menu gen-sede*/
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+/*tamaño de icons de kpis*/
+.icon {
+	width:15px;
+}
+
+.kpis-container {
+	float: left;
+	width: 20%;
+}
+
+.kpi-bullet {
+	display: block;
+	text-align: center;
+    background-color: gray;
+    color: white;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+.kpi-bullet div img {
+	margin-right: 5px;
+}
+
+.sub-kpi {
+	font-size: 12px;
+}
+.result {
+	color:red;
+	font-size: 18px;
+}
+
+#kpis-section {
+	height: 90px;
+}
+
+.sections section {
+	height: 200px;
+	border: black;
+}
+
+#end-kpis {
+	margin-top: 100px;
+}
+
+.tabs{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tabs li {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	height: 30px;
+}
+
+.tabs li a {
+	text-decoration: none;
+	color: black;
+}
+
+#menu {
+	background: orange;
+	height: 30px;
+	text-align: center;
+}
+
+.active {
+	/*display: initial;*/
+}
+
+.inactive {
+	display: none;
+}
+
+.highlighted {
+	background: #8e8e8e;
+}
+
+/*dashboard por sede*/
+
+#genSelected {
+	text-align: center;
+	height: 30px;
+}
+
+#genSelected span {
+	display: inline-block;
+	margin-top: 5px;
+	font-weight: bold;
 }
